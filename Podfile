@@ -1,6 +1,6 @@
 require_relative '../../node_modules/@capacitor/ios/scripts/pods_helpers'
 
-platform :ios, '15.0'
+platform :ios, '16.0'
 use_frameworks!
 
 # workaround to avoid Xcode caching of Pods that requires
@@ -24,6 +24,29 @@ target 'App' do
   # Add your Pods here
 end
 
+def normalize_pods_support_file_paths(installer)
+  support_file_groups = [
+    'Capacitor',
+    'CapacitorApp',
+    'CapacitorCommunityPrivacyScreen',
+    'CapacitorCordova',
+    'CapacitorDevice',
+    'CapacitorFilesystem',
+    'CapacitorPreferences',
+    'CapacitorPushNotifications'
+  ]
+  legacy_prefix = File.join('..', '..', '..', 'ios', 'App', 'Pods')
+
+  installer.pods_project.groups.flat_map(&:recursive_children).grep(Xcodeproj::Project::Object::PBXGroup).each do |group|
+    next unless group.display_name == 'Support Files'
+    next unless support_file_groups.any? { |name| group.path == "#{legacy_prefix}/Target Support Files/#{name}" }
+
+    group.path = group.path.sub("#{legacy_prefix}/", '')
+    group.source_tree = 'SOURCE_ROOT'
+  end
+end
+
 post_install do |installer|
   assertDeploymentTarget(installer)
+  normalize_pods_support_file_paths(installer)
 end
