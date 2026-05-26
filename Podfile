@@ -1,4 +1,5 @@
-require_relative '../../node_modules/@capacitor/ios/scripts/pods_helpers'
+capacitor_ios_path = File.exist?(File.join(__dir__, 'node_modules', '@capacitor', 'ios')) ? 'node_modules/@capacitor/ios' : '../../node_modules/@capacitor/ios'
+require_relative "#{capacitor_ios_path}/scripts/pods_helpers"
 
 platform :ios, '16.0'
 use_frameworks!
@@ -9,14 +10,16 @@ use_frameworks!
 install! 'cocoapods', :disable_input_output_paths => true
 
 def capacitor_pods
-  pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
-  pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
-  pod 'CapacitorCommunityPrivacyScreen', :path => '../../node_modules/@capacitor-community/privacy-screen'
-  pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
-  pod 'CapacitorDevice', :path => '../../node_modules/@capacitor/device'
-  pod 'CapacitorFilesystem', :path => '../../node_modules/@capacitor/filesystem'
-  pod 'CapacitorPreferences', :path => '../../node_modules/@capacitor/preferences'
-  pod 'CapacitorPushNotifications', :path => '../../node_modules/@capacitor/push-notifications'
+  node_modules_path = File.exist?(File.join(__dir__, 'node_modules')) ? 'node_modules' : '../../node_modules'
+
+  pod 'Capacitor', :path => "#{node_modules_path}/@capacitor/ios"
+  pod 'CapacitorCordova', :path => "#{node_modules_path}/@capacitor/ios"
+  pod 'CapacitorCommunityPrivacyScreen', :path => "#{node_modules_path}/@capacitor-community/privacy-screen"
+  pod 'CapacitorApp', :path => "#{node_modules_path}/@capacitor/app"
+  pod 'CapacitorDevice', :path => "#{node_modules_path}/@capacitor/device"
+  pod 'CapacitorFilesystem', :path => "#{node_modules_path}/@capacitor/filesystem"
+  pod 'CapacitorPreferences', :path => "#{node_modules_path}/@capacitor/preferences"
+  pod 'CapacitorPushNotifications', :path => "#{node_modules_path}/@capacitor/push-notifications"
 end
 
 target 'App' do

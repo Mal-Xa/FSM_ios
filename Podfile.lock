@@ -18,14 +18,14 @@ PODS:
   - IONFilesystemLib (1.1.2)
 
 DEPENDENCIES:
-  - "Capacitor (from `../../node_modules/@capacitor/ios`)"
-  - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
-  - "CapacitorCommunityPrivacyScreen (from `../../node_modules/@capacitor-community/privacy-screen`)"
-  - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
-  - "CapacitorDevice (from `../../node_modules/@capacitor/device`)"
-  - "CapacitorFilesystem (from `../../node_modules/@capacitor/filesystem`)"
-  - "CapacitorPreferences (from `../../node_modules/@capacitor/preferences`)"
-  - "CapacitorPushNotifications (from `../../node_modules/@capacitor/push-notifications`)"
+  - "Capacitor (from `node_modules/@capacitor/ios`)"
+  - "CapacitorApp (from `node_modules/@capacitor/app`)"
+  - "CapacitorCommunityPrivacyScreen (from `node_modules/@capacitor-community/privacy-screen`)"
+  - "CapacitorCordova (from `node_modules/@capacitor/ios`)"
+  - "CapacitorDevice (from `node_modules/@capacitor/device`)"
+  - "CapacitorFilesystem (from `node_modules/@capacitor/filesystem`)"
+  - "CapacitorPreferences (from `node_modules/@capacitor/preferences`)"
+  - "CapacitorPushNotifications (from `node_modules/@capacitor/push-notifications`)"
 
 SPEC REPOS:
   trunk:
@@ -33,21 +33,21 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Capacitor:
-    :path: "../../node_modules/@capacitor/ios"
+    :path: "node_modules/@capacitor/ios"
   CapacitorApp:
-    :path: "../../node_modules/@capacitor/app"
+    :path: "node_modules/@capacitor/app"
   CapacitorCommunityPrivacyScreen:
-    :path: "../../node_modules/@capacitor-community/privacy-screen"
+    :path: "node_modules/@capacitor-community/privacy-screen"
   CapacitorCordova:
-    :path: "../../node_modules/@capacitor/ios"
+    :path: "node_modules/@capacitor/ios"
   CapacitorDevice:
-    :path: "../../node_modules/@capacitor/device"
+    :path: "node_modules/@capacitor/device"
   CapacitorFilesystem:
-    :path: "../../node_modules/@capacitor/filesystem"
+    :path: "node_modules/@capacitor/filesystem"
   CapacitorPreferences:
-    :path: "../../node_modules/@capacitor/preferences"
+    :path: "node_modules/@capacitor/preferences"
   CapacitorPushNotifications:
-    :path: "../../node_modules/@capacitor/push-notifications"
+    :path: "node_modules/@capacitor/push-notifications"
 
 SPEC CHECKSUMS:
   Capacitor: d13cad5fa09155679672808cc4ca9fbc2997e1b4
@@ -60,6 +60,6 @@ SPEC CHECKSUMS:
   CapacitorPushNotifications: ec08d589c226a2c0db7c032ec1bf5b044ec85f8e
   IONFilesystemLib: 21a63377696b2d8fab5632ecfb7d2ac67bddb68a
 
-PODFILE CHECKSUM: 48d23ad8e886c5db074bfb7eda84f777d2c30a3a
+PODFILE CHECKSUM: e45e9b418e03c12545cfde4067ef429ba69cdc9f
 
 COCOAPODS: 1.16.2
