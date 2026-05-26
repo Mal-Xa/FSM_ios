@@ -1,0 +1,23 @@
+{
+	"appId": "com.soratechtip.franksschoolofmaths",
+	"appName": "Frank's School of Maths",
+	"webDir": "dist",
+	"server": {
+		"iosScheme": "fsm",
+		"hostname": "app",
+		"allowNavigation": [
+			"*.mediadelivery.net",
+			"*.b-cdn.net",
+			"video.bunnycdn.com",
+			"iframe.mediadelivery.net"
+		]
+	},
+	"packageClassList": [
+		"PrivacyScreenPlugin",
+		"AppPlugin",
+		"DevicePlugin",
+		"FilesystemPlugin",
+		"PreferencesPlugin",
+		"PushNotificationsPlugin"
+	]
+}

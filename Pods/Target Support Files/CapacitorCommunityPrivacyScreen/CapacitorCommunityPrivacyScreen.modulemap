@@ -1,0 +1,6 @@
+framework module CapacitorCommunityPrivacyScreen {
+  umbrella header "CapacitorCommunityPrivacyScreen-umbrella.h"
+
+  export *
+  module * { export * }
+}

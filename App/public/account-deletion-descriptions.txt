@@ -1,0 +1,5 @@
+Short Description
+Users can request deletion of their Frank's School of Maths account and associated personal data by emailing sisepsolutions@gmail.com for verification and processing.
+
+Full Description
+Frank's School of Maths allows users to request deletion of their account and associated personal data. To submit a deletion request, users should email sisepsolutions@gmail.com from the email address linked to their account and use the subject line "Account Deletion Request - Frank's School of Maths." The request should include the user's full name, registered email address, phone number if available, and role in the app such as student, coach, or admin. We may ask for additional verification before processing the request. Once verified, we will delete the account and personal data that is no longer required for legitimate educational, administrative, security, or legal purposes. Certain records, such as payment records, academic records, or security logs, may be retained where required by law or operational necessity.

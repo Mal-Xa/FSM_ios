@@ -1,0 +1,22 @@
+Short Description
+Frank's School of Maths is a learning app for students, coaches, and staff to access classes, videos, quizzes, materials, attendance, and updates in one place.
+
+Full Description
+Frank's School of Maths is a complete learning platform designed to help students stay connected with their classes and help coaches and staff manage academic activities more efficiently.
+
+With the app, students can access their subjects, watch lectures and course videos, read study materials, take quizzes, check attendance, receive notices, and stay updated with important academic information. The Android app also supports secure offline video downloads, making it easier to continue learning with limited internet access.
+
+Coaches and administrators can use the platform to organize learning content, manage videos and materials, review quiz activity, monitor students, publish notices, and support day-to-day academic operations from a single system.
+
+Key features include:
+- Subject and batch-based learning access
+- Lectures, videos, and study materials
+- Quiz participation and results tracking
+- Attendance monitoring
+- Notices and updates
+- Profile and account management
+- Role-based access for students, coaches, admins, and staff
+- Push notifications for important updates
+- Secure offline video downloads on Android
+
+Frank's School of Maths brings teaching, learning, and academic management together in one simple and focused app experience.

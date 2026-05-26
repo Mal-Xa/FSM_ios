@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <!--
+      Content Security Policy for Capacitor + Firebase.
+      Allows the WebView to reach:
+        - Firebase Auth, Firestore, Functions (*.googleapis.com, *.firebaseapp.com)
+        - Your Cloud Functions API
+        - Bunny Stream CDN for video playback
+      Without this, Android WebView silently blocks these requests.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' capacitor: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://apis.google.com https://www.gstatic.com https://*.googleapis.com https://*.firebaseapp.com; script-src-elem 'self' 'unsafe-inline' blob: https://apis.google.com https://www.gstatic.com https://*.googleapis.com https://*.firebaseapp.com; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; media-src 'self' blob: https://*.b-cdn.net https://*.mediadelivery.net; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com https://*.firebaseapp.com https://*.cloudfunctions.net https://video.bunnycdn.com https://*.b-cdn.net https://www.google-analytics.com https://analytics.google.com wss://*.firebaseio.com; frame-src 'self' https://apis.google.com https://*.googleapis.com https://*.firebaseapp.com https://*.mediadelivery.net https://iframe.mediadelivery.net https://meet.google.com https://*.meet.google.com;" />
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/fsm-logo.png">
+    <title>Frank's School of Maths</title>
+    <meta name="description" content="Sora's Learning Management System" />
+    <meta name="author" content="Sora's LMS" />
+    <meta property="og:title" content="Sora's LMS" />
+    <meta property="og:description" content="Sora's Learning Management System" />
+    <meta property="og:type" content="website" />
+
+    <!-- SPA redirect: restore path after 404 redirect -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.getItem('spa_redirect');
+        if (redirect) {
+          sessionStorage.removeItem('spa_redirect');
+          window.history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-DLhcv_NO.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B8BUWxGU.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
